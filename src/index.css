@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .sideBar-links {
+        @apply flex items-center space-x-2 hover:bg-gray-200 p-4;
+    }
+}
