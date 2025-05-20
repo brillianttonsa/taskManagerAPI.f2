@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/Profile' element={<Profile />} />
+        <Route path='/' element={<Profile />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/manageTask' element={<ManageTask />} />
         <Route path='/TaskDashBoard' element={<TaskDashBoard />} />

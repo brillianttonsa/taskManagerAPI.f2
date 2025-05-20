@@ -3,7 +3,7 @@ import { User, LayoutDashboard, BookCheck, LogOut, Sidebar} from 'lucide-react'
 function SideMenu(){
     return(
         <div className='bg-gray-00 h-screen'>
-        <a href="/profile" className='sideBar-links'>
+        <a href="/" className='sideBar-links'>
           <span><User/></span>
           <span>Profile</span>
         </a>

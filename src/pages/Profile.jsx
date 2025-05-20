@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import { useState,useEffect } from "react";
-
+import { UserRoundPen } from "lucide-react";
+import Avatar from "../components/Avatar";
 
 function Profile(){
     const [isEdit, setIsEdit] = useState(false);
@@ -56,11 +57,15 @@ function Profile(){
     return(
         <>
             <Header/>
-            <div className='mx-auto sm:p-2 flex items-center justify-center'>
+            <div className='mx-auto sm:p-2 flex items-center justify-center mt-8'>
                 <div className="grid grid-col-1 md:grid-cols-2 bg-white shadow-md rounded-md p-4">
                    <div className="flex flex-col items-center justify-center space-y-9 rounded-md p-4 md:p-6 border-b-2 border-gray-300 md:border-2">
                         <div>
-                            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="profile" className="rounded-full w-32 h-32"/>
+                            <Avatar 
+                                // src="https://images.unsplash.com/photo-1502685104226-e9df14d4d9f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" 
+                                alt="Profile Picture" 
+                                className="h-32 w-32"
+                            />
                         </div>
                         <div className="text-center space-y-4">
                             <p className="text-2xl font-bold border-b-1 border-gray-400">BRILLIANTTONSA</p>
@@ -76,8 +81,8 @@ function Profile(){
 
                             </div>
                             
-                            <h1 className="text-3xl">Profile Information</h1>
-                            <p className="text-sm mt-2">Update your personal information and profile picture</p>
+                            <h1 className="text-3xl text-center">Profile Information</h1>
+                            <p className="text-sm mt-2 text-center">Update your personal information and profile picture</p>
                         </div>
                         <form action="" onSubmit={handleFormData}>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
